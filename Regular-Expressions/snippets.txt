@@ -17,6 +17,12 @@ $       - End of a String
 |       - Either Or
 ( )     - Group
 
+Lookarounds:
+- (?=foo)   - Lookahead	Asserts that what immediately follows the current position in the string is foo
+- (?<=foo)	- Lookbehind	Asserts that what immediately precedes the current position in the string is foo
+- (?!foo)	  - Negative Lookahead	Asserts that what immediately follows the current position in the string is not foo
+- (?<!foo)	- Negative Lookbehind	Asserts that what immediately precedes the current position in the string is not foo
+
 Quantifiers:
 *       - 0 or More
 +       - 1 or More
